@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    color:rgb(255, 255, 255);
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+    font-weight: 70;
+    padding: 0px;
+}
+
+.navBar{
+    justify-content: space-around;
+    width: 30%;
+    padding: 0px;
+    margin-left: 8%;
+    margin-top: 11%;
+    list-style: none;
+}
+
+.navBarT{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    list-style: none;
+
+}
+
+.navBar li{
+    padding: 20px;
+}
+
+.testT{
+    color: #ffffff;
+    text-decoration: none;  
+    font-size: 35px;
+    font-family: Ubuntu;
+}
+
+.picture{
+    background: url(./images/edanur-agac-gDNhfxuNneM-unsplash.jpg) center/cover no-repeat fixed;
+    background-color: rgba(58, 58, 58, 0.264); /* Tint color */
+    background-blend-mode: multiply;
+    display: flex; 
+    height: 100vh;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.links{
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+
+}
+.location{
+    
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2p;
+    padding: 3%;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+    height:450px; width:500px; margin: 30px auto; background: white; border-radius: 10px;
+}
+
+.popup{
+    width: min(300px, 100%);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    justify-content: center;
+    text-align: center;
+    padding: 0 30px 30px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button{
+    color: black;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+.popup button:hover{
+    background-color: rgb(192, 192, 192);
+    transition: 0.1s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+td{
+    width: 300px; 
+    padding: 3% 0px;
+    font-family: Ubuntu;      
+    font-size: 20px;
+    color: white;
+}
+
+legend{
+    font-family: Ubuntu;
+    font-size: 40px;
+}
+
+.hours{
+    text-align: center;
+    margin: auto;
+}
+
+fieldset{
+    border-radius: 10px; border: 3px solid;
+    width: 500px;
+    margin: 0px;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.zoomt{
+    transition: 1s;
+    margin: 1rem;
+}
+
+.zoomt:hover{
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.zoom{
+    transition: 1s;
+    margin: 1rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .zoom, .zoomt{
+        display: none;
+    }
+
+    fieldset{
+        border-radius: 10px; border: 3px solid;
+        width: 300px;
+        margin: auto;
+    }
+    .navBar{
+        padding: auto;
+        margin: auto 0px;
+    }
+
+    .location, .location h1{
+        width: 300px;
+        font-family: Ubuntu;
+        font-size: 26px;
+    }
+    .location h2, h3{
+        font-size: 20px;
+        font-family: Ubuntu;
+    }
+    .location iframe{
+        width: 250px;
+        height: 250px;
+    }
+
+
+}
