@@ -175,7 +175,6 @@ fieldset{
 }
 
 @media only screen and (max-device-width: 1024px) {
-
     .zoom, .zoomt{
         display: none;
     }
@@ -185,21 +184,33 @@ fieldset{
         width: 20rem;
         margin: auto;
     }
+
     .navBar{
         padding: auto;
         margin: auto 0px;
     }
+
     .location, .location h1{
         width: 300px;
         font-family: Ubuntu;
         font-size: 26px;
     }
+
     .location h2, h3{
         font-size: 20px;
         font-family: Ubuntu;
     }
+
     .location iframe{
         width: 250px;
         height: 250px;
+    }
+
+    .picture{
+        background: url(./images/edanur-agac-gDNhfxuNneM-unsplash.jpg) cover no-repeat fixed;
+    background-color: rgba(58, 58, 58, 0.264); /* Tint color */
+    background-blend-mode: multiply;
+    display: flex; 
+    height: 100vh;
     }
 }
