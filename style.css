@@ -9,6 +9,12 @@
     padding: 0px;
 }
 
+html,body
+{
+
+    overflow-x: hidden; 
+}
+
 .navBar{
     justify-content: space-around;
     width: 30%;
@@ -130,7 +136,7 @@ legend{
 
 fieldset{
     border-radius: 10px; border: 3px solid;
-    width: 500px;
+    width: 30rem;
     margin: 0px;
 }
 
@@ -142,6 +148,7 @@ fieldset{
 .zoomt{
     transition: 1s;
     margin: 1rem;
+
 }
 
 .zoomt:hover{
@@ -152,9 +159,22 @@ fieldset{
 .zoom{
     transition: 1s;
     margin: 1rem;
+    width: 22rem;
+    height: 30rem;
 }
 
-@media only screen and (max-device-width: 480px) {
+.container{
+    background-color: #FFB444; 
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+}
+
+.logo{
+    margin: 20px
+}
+
+@media only screen and (max-device-width: 1024px) {
 
     .zoom, .zoomt{
         display: none;
@@ -162,14 +182,13 @@ fieldset{
 
     fieldset{
         border-radius: 10px; border: 3px solid;
-        width: 300px;
+        width: 20rem;
         margin: auto;
     }
     .navBar{
         padding: auto;
         margin: auto 0px;
     }
-
     .location, .location h1{
         width: 300px;
         font-family: Ubuntu;
@@ -183,6 +202,4 @@ fieldset{
         width: 250px;
         height: 250px;
     }
-
-
 }
