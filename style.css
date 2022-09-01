@@ -207,10 +207,6 @@ fieldset{
     }
 
     .picture{
-        background: url(./images/edanur-agac-gDNhfxuNneM-unsplash.jpg) cover no-repeat fixed;
-    background-color: rgba(58, 58, 58, 0.264); /* Tint color */
-    background-blend-mode: multiply;
-    display: flex; 
-    height: 100vh;
+        background-size:cover
     }
 }
