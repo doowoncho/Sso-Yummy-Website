@@ -1,17 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham');
 *{
     color:rgb(255, 255, 255);
     margin: 0px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Gotham Black', sans-serif; 
     font-weight: 70;
     padding: 0px;
 }
 
 html,body
 {
-
     overflow-x: hidden; 
 }
 
@@ -29,7 +29,7 @@ html,body
     justify-content: space-evenly;
     padding: 15px;
     list-style: none;
-
+    background-color: rgb(37, 37, 37);
 }
 
 .navBar li{
@@ -39,8 +39,8 @@ html,body
 .testT{
     color: #ffffff;
     text-decoration: none;  
-    font-size: 34px;
-    font-family: Ubuntu;
+    font-size: 30px;
+    font-family: 'Gotham Black', sans-serif;
 }
 
 .picture{
@@ -49,6 +49,17 @@ html,body
     background-blend-mode: multiply;
     display: flex; 
     height: 100vh;
+}
+
+.links img{
+    margin: 1rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+    padding: 2rem
+}
+
+.links img:hover{
+    background-color: rgb(223, 223, 223);
 }
 
 a{
@@ -67,14 +78,12 @@ a:hover{
     padding: 10%;
 
 }
+
 .location{
-    
     justify-content: center;
     text-align: center;
-    box-shadow: 2p;
-    padding: 3%;
-    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
-    height:450px; width:500px; margin: 30px auto; background: white; border-radius: 10px;
+
+    margin:  10rem auto;
 }
 
 .popup{
@@ -117,16 +126,18 @@ a:hover{
 }
 
 td{
-    width: 300px; 
-    padding: 3% 0px;
-    font-family: Ubuntu;      
-    font-size: 20px;
+    width: 20rem; 
+    padding: 1.5rem 0px;
+    font-family: 'Gotham', sans-serif; 
+    font-size: 23px;
     color: white;
 }
 
 legend{
-    font-family: Ubuntu;
+    font-family: 'Gotham', sans-serif;
     font-size: 40px;
+    background-color: rgb(27, 27, 27);
+    width: 9rem;
 }
 
 .hours{
@@ -135,9 +146,9 @@ legend{
 }
 
 fieldset{
-    border-radius: 10px; border: 3px solid;
-    width: 30rem;
-    margin: 0px;
+    border-radius: 10px; 
+    border: 3px solid;
+
 }
 
 .zoom:hover{
@@ -145,29 +156,20 @@ fieldset{
     transition: 1s;
 }
 
-.zoomt{
-    transition: 1s;
-    margin: 1rem;
-
-}
-
-.zoomt:hover{
-    transform: scale(1.08);
-    transition: 1s;
-}
-
 .zoom{
     transition: 1s;
-    margin: 1rem;
-    width: 22rem;
-    height: 30rem;
+    width: auto;
+    height: 25rem;
+    margin: 2rem;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
 }
 
 .container{
-    background-color: #FFB444; 
+    background-color: #ffffff; 
     display: flex; 
     justify-content: center;
     text-align: center;
+
 }
 
 .logo{
